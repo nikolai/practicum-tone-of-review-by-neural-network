@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# fish: source start.sh — venv активируется в текущей сессии
+echo 'Installing kernel deps in venv...'
 [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ] || eval 'env START_SH_FROM_FISH=1 bash (status filename) $argv; and source (dirname (status filename))/.venv/bin/activate.fish; or return 1; return 0'
 eval '
 set -e
